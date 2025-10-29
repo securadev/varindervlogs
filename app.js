@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Database connection code
-mongoose.connect('mongodb+srv://deeplongia0002_db_user:KM4fc6mmf3AZYbNl@cluster0.1ortb87.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
+mongoose.connect('mongodb+srv://admin:admin@cluster0.55fnuej.mongodb.net/?appName=Cluster0',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
