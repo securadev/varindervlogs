@@ -89,6 +89,16 @@ app.post("/login", async (req, res) => {
   }
 });
 
+// Get all vlogs
+app.get("/vlogs", async (req, res) => {
+  try {
+    const vlogs = await Vlog.find();
+    return res.status(200).json(vlogs);
+  } catch (err) {
+    return res.status(400).json({ message: err.message });
+  }
+});
+
 
 //Get All the Users
 app.get("/", authMiddleware, async (req, res) => {
@@ -154,6 +164,8 @@ app.get("/:id", async (req, res) => {
 
 // ===================== VLOG CRUD (Protected) =====================
 
+
+
 // Create vlog
 app.post("/vlogs", authMiddleware, async (req, res) => {
   try {
@@ -171,15 +183,6 @@ app.post("/vlogs", authMiddleware, async (req, res) => {
   }
 });
 
-// Get all vlogs
-app.get("/vlogs", authMiddleware, async (req, res) => {
-  try {
-    const vlogs = await Vlog.find().populate("createdBy", "name email");
-    return res.status(200).json(vlogs);
-  } catch (err) {
-    return res.status(400).json({ message: err.message });
-  }
-});
 
 // Get vlog by ID
 app.get("/vlogs/:id", authMiddleware, async (req, res) => {
