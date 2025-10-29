@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const cors = require('cors');
+app.use(cors());
+
 
 const app = express();
 // Body Parser Code.
@@ -27,6 +30,7 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', userSchema);
+
 
 
 // ===================== VLOG SCHEMA =====================
