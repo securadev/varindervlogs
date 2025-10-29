@@ -4,10 +4,11 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cors = require('cors');
-app.use(cors());
+
 
 
 const app = express();
+app.use(cors());
 // Body Parser Code.
 app.use(bodyParser.json());
 
