@@ -1,0 +1,195 @@
+/* 🌸 Global Home Section */
+.home-section {
+  background: linear-gradient(135deg, #ffe0f0 0%, #ffd1e8 50%, #ffb6d9 100%);
+  font-family: "Poppins", sans-serif;
+  color: #4a0048;
+  overflow: hidden;
+}
+
+/* 🌸 Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px 20px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero-text {
+  flex: 1 1 480px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #ff2e93;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero-text h1 span {
+  color: #66004d;
+}
+.hero-text p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+.hero-btn {
+  display: inline-block;
+  background: #ff2e93;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background: #e60073;
+  transform: scale(1.05);
+}
+.hero-image {
+  flex: 1 1 480px;
+  text-align: center;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.25);
+}
+
+/* 🌸 Featured Vlogs */
+.featured-vlogs {
+  text-align: center;
+  padding: 80px 20px;
+}
+.featured-vlogs h2 {
+  font-size: 2.4rem;
+  color: #ff2e93;
+  margin-bottom: 10px;
+}
+.section-subtitle {
+  color: #66004d;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+.vlog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+.vlog-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.25);
+  overflow: hidden;
+  transition: 0.3s;
+}
+.vlog-card:hover {
+  transform: translateY(-6px);
+}
+.vlog-card iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+}
+.vlog-card h4 {
+  padding: 15px;
+  color: #66004d;
+  font-size: 1.1rem;
+}
+
+/* 🌸 About Preview */
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.about-content {
+  flex: 1 1 480px;
+}
+.about-content h2 {
+  color: #ff2e93;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.about-btn {
+  background: #ff2e93;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.about-btn:hover {
+  background: #e60073;
+  transform: scale(1.05);
+}
+.about-image {
+  flex: 1 1 480px;
+  text-align: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.25);
+}
+
+/* 🌸 Subscribe CTA */
+.subscribe-section {
+  text-align: center;
+  padding: 100px 20px 120px;
+  background: #fff0f7;
+}
+.subscribe-section h2 {
+  font-size: 2.2rem;
+  color: #ff2e93;
+  margin-bottom: 15px;
+}
+.subscribe-section span {
+  color: #66004d;
+}
+.subscribe-section p {
+  color: #4a0048;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+.subscribe-btn {
+  background: #ff2e93;
+  color: #fff;
+  padding: 14px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.subscribe-btn:hover {
+  background: #e60073;
+  transform: scale(1.05);
+}
+
+/* 🌸 Responsive */
+@media (max-width: 900px) {
+  .hero, .about-preview {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text, .about-content {
+    text-align: center;
+  }
+}
